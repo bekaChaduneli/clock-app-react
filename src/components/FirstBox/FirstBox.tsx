@@ -49,7 +49,7 @@ export default function FirstBox(props: any) {
         p={{ sm: "26px", md: "64px", xl: "56px" }}
         paddingX={{ sm: "", md: "", xl: "165px" }}
         flexDir="row"
-        w="100%"
+        w={{ sm: "100%", xl: "1000px" }}
         justifyContent="space-between"
       >
         <Flex
@@ -146,7 +146,7 @@ export default function FirstBox(props: any) {
           w={{ sm: "115px", md: "146px" }}
           h={{ sm: "39px", md: "56px" }}
           mt={{ sm: "48px", md: "80px" }}
-          transform={{ sm: "", md: "", xl: "translate(70vw, -120px)" }}
+          transform={{ sm: "", md: "", xl: "translate(70vw, -170px)" }}
           borderRadius="28px"
           backgroundColor="white"
           zIndex="1000"
