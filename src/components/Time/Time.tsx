@@ -2,6 +2,15 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Text, Box, Flex } from "@chakra-ui/react";
 export default function Time(props: any) {
+  const weekdays = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   useEffect(() => {
     const timeFunc = async () => {
       const res = await axios.get(
@@ -19,7 +28,8 @@ export default function Time(props: any) {
         ` ${data.data.timezone.capital}, ${data.data.country}`
       );
       props.setYearDay(
-        data.data.datetime.week * 7 - data.data.datetime.day + 1
+        data.data.datetime.week * 7 -
+          (7 - (weekdays.indexOf(data.data.datetime.day_full) + 1))
       );
     };
     timeFunc();
