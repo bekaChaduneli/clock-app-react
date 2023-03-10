@@ -10,7 +10,7 @@
 
 ### Screenshot
 
-![](/prewiew,jpg)
+![](/preview.jpg)
 
 ### Links
 
