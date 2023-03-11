@@ -22,7 +22,7 @@ export default function Time(props: any) {
       props.setTime(data.data.datetime.time.slice(0, 5));
       props.setTimeDay(data.data.datetime.timeday_gen);
       props.setWeek(data.data.datetime.week);
-      props.setDay(data.data.datetime.day);
+      props.setDay(weekdays.indexOf(data.data.datetime.day_full) + 1);
       props.setPmAm(data.data.datetime.hour_am_pm);
       props.setCountryCity(
         ` ${data.data.timezone.capital}, ${data.data.country}`
