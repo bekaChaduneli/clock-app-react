@@ -14,7 +14,7 @@
 
 ### Links
 
-- Live Site URL: [Live site](https://interactive-card-details-adecb.web.app/)
+- Live Site URL: [Live site](https://clock-app-react-z4tq.vercel.app/)
 - Solution URL: [Solution URL](clock-app-react)
 
 ### Built with
